@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 960px;
+    margin: auto;
+}
+
+header {
+    height: 175px;
+    text-align: center;
+    background-image: url(../img/bg.png);
+    background-size: auto;
+    padding-top: 15px;
+}
+
+h1,
+p {
+    color: #1a6600;
+}
+
+label {
+    cursor: pointer;
+}
+
+.block1,
+.block2 {
+    display: flex;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.5;
+    color: #145214;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bl1,
+.bl2 {
+    width: 50%;
+    margin: auto;
+}
+
+.wohnen {
+    width: 50%;
+    height: auto;
+    line-height: 2.5;
+}
+
+.text-input,
+.inp,
+.finish {
+    border: 1px solid #1f7a1f;
+    border-radius: 5px;
+    width: 280px;
+    box-shadow: 1px 1px #2eb82e;
+    text-align: center;
+}
+
+.text-input:focus,
+.inp:focus {
+    background: #adebad;
+}
+
+.hobbies {
+    background-image: url(../img/hobby.png);
+    background-repeat: no-repeat;
+    height: 450px;
+    background-size: 100%;
+    padding-left: 50%;
+    padding-top: 5px;
+    line-height: 1.5;
+}
+
+.hobbies:first-line,
+.tit,
+.doYouRead:first-line,
+#pas {
+    color: #145214;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.checkbox span,
+.radio span {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border: 1.5px solid #1f7a1f;
+    border-radius: 5px;
+    margin: 1px 6px;
+    vertical-align: text-bottom;
+    color: #145214;
+}
+
+.radio span {
+    border-radius: 100%;
+}
+
+.checkbox span i,
+.radio span i {
+    position: relative;
+    top: -6px;
+    color: darkred;
+    font-weight: 700;
+    transform: scale(1.5);
+    opacity: 0;
+    transition: all 0.5s easy;
+}
+
+.checkbox input,
+.radio input {
+    position: absolute;
+    left: -999999em;
+    top: 0;
+}
+
+.checkbox input:checked+span i,
+.radio input:checked+span i {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.5s easy;
+}
+
+.about_Hobby {
+    opacity: 0.5;
+    margin-top: 15px;
+    color: black;
+    font-weight: 600;
+}
+
+.info,
+.intern {
+    display: flex;
+    height: auto;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.im {
+    text-align: center;
+}
+
+.doYouRead {
+    padding-left: 125px;
+    line-height: 1.5;
+}
+
+.intern,
+.finish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intern {
+    line-height: 0.5;
+}
+
+.inp {
+    width: 350px;
+    text-align: center;
+}
+
+#fin{
+    height: 330px;
+    width: auto;
+    margin-left: 345px;
+    margin-top: 20px;
+}
+.finish {
+    height: 30px;
+    background-color: #1f7a1f;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.finish:focused{
+    outline-style: none;
+    background-color: aquamarine;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/129c100fbd.js"></script>
+    <title>Yurasova. Forms</title>
+</head>
+
+<body>
+    <header>
+        <h1>Тестовый опрос</h1>
+        <p>Вас приветсвует тестовая анкета!</p>
+    </header>
+    <form action="https://weblaboratory.in.ua/mail/" method="post">
+        <div class="block1">
+            <div class="bl1">
+                <img src="img/2.png" alt="personality">
+            </div>
+            <div class="bl2">
+                <label for="lN">Введите ваше имя:</label><br>
+                <input class="text-input" id="lN" name="firstName" value="" required><br>
+                <label for="fN">Введите вашу фамилию:</label><br>
+                <input class="text-input" id="fN" name="lastName" value=""><br>
+                <label>Ваш почтовый ящик:</label><br>
+                <input class="text-input" type="email" name="user_email"><br>
+                <label>Контактный телефон:</label><br>
+                <input class="text-input" type="tel" name="user_tel" placeholder="+380-xx-xxx-xx-xx">
+            </div>
+        </div>
+
+        <div class="block2">
+            <div class="bl1 wohnen">
+                <label for="lP">Место жительства:</label><br>
+                <input class="text-input" id="lP" name="country" placeholder="Страна проживания"><br>
+                <select class="text-input" name="city">
+                <option value="gorod">Город проживания</option>
+                <option value="Kiev">Киев</option>
+                <option value="Dniepr">Днепр</option>
+                <option value="Lviv">Львов</option>
+                <option value="Odessa">Одесса</option>
+                <option value="another">Я живу в другом населенном пункте</option>
+            </select>
+            </div>
+            <div class="bl2">
+                <img src="img/city.png" alt="stadt">
+            </div>
+        </div>
+        <div class="hobbies">
+
+            <div class=" bl1">
+                <p><label for=".tit">Чем вы увлекаетесь?</label><br>
+                    <label class="checkbox"><input type="checkbox" name="hobby" value="cinema"><span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>Кино</label><br>
+                <label class="checkbox"><input type="checkbox" name="hobby" value="musik"><span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>Музыка</label><br>
+                <label class="checkbox"><input type="checkbox" name="hobby" value="turism"><span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>Туризм</label><br>
+                <label class="checkbox"><input type="checkbox" name="hobby" value="handmade"><span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>Народные ремесла</label><br>
+                <label class="checkbox"><input type="checkbox" name="hobby" value="another"><span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>Другое</label></p>
+
+            </div>
+
+            <div class="bl2">
+                <textarea class="about_Hobby" name="aboutHobby" rows="10" cols="35" placeholder="Опишите детальнее ваше хобби: что именно вам в нем нравится, сколько времени вы уделяете своему хобби и тд"></textarea>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="bl1 im"><img src="img/lesen.jpeg" alt="books"></div>
+            <div class="bl2 doYouRead">
+                <p><label for="lit">Какие книги вы читаете чаще?</label></br>
+                <label class="radio"><input type="radio" name="literature" value="fiction"><span><i class="fa fa-circle" aria-hidden="true"></i></span>художественную литературу</label></br>
+                <label class="radio"><input type="radio" name="literature" value="poem"><span><i class="fa fa-circle" aria-hidden="true"></i></span>поэзию</label></br>
+                <label class="radio"><input type="radio" name="literature" value="po_science"><span><i class="fa fa-circle" aria-hidden="true"></i></span>научно-популярную литературу</label></br>
+                <label class="radio"><input type="radio" name="literature" value="none"><span><i class="fa fa-circle" aria-hidden="true"></i></span>я не читаю</label></br></p>
+            </div>
+        </div>
+
+        <div class="intern">
+            <input class="inp"  list="browsers" name="browser" placeholder="Каким браузером вы обычно пользуетесь?">
+            <datalist id="browsers">
+                <option value="Я не пользуюсь интернетом">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <label id="pas" for="pass">Введите пароль</label></br>
+            <input class="inp" type="password" name="yourPass" value="password">
+        </div>
+
+        <div class="pass">
+            
+        </div>
+        <div id="fin">
+        <input class="finish" type="submit" value="Готово? Нажми здесь!"></button><br>
+        <input  type="reset" value="Заполнить ещё раз" class="finish">
+        </div>
+    </form>
+</body>
+
+</html>
