@@ -114,7 +114,7 @@ label {
 .radio input {
     position: absolute;
     left: -999999em;
-    top: 0;
+  
 }
 
 .checkbox input:checked+span i,
@@ -165,10 +165,11 @@ label {
 }
 
 #fin{
-    height: 330px;
+    height: 220px;
     width: auto;
     margin-left: 345px;
     margin-top: 20px;
+    
 }
 .finish {
     height: 30px;
@@ -177,9 +178,13 @@ label {
     font-weight: 700;
     text-align: center;
     padding-top: 5px;
+    margin-bottom: 10px;
 }
 
 .finish:focused{
     outline-style: none;
     background-color: aquamarine;
+}
+.doYouRead{
+    line-height: 1;
 }
